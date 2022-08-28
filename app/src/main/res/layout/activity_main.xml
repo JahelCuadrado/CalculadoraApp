@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#1B1B1B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultado"
+        android:textColor="@color/white"
+        android:layout_row="0"
+        android:layout_rowSpan="5"
+        android:layout_rowWeight="5"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="4"
+        android:height="250dp"
+        android:width="200dp"
+        android:gravity="end|bottom"
+        android:padding="25dp"
+        android:text="Hola"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <!-- FILA 1-->
+
+
+    <TextView
+        style="@style/calc_dark"
+        android:tag="dividir"
+        android:layout_row="5"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:text="%"
+        android:onClick="calculadora"/>
+
+    <TextView
+        android:tag="bt_7"
+        style="@style/calc_ligth"
+        android:layout_row="6"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="7" />
+
+    <TextView
+        android:tag="bt_4"
+        style="@style/calc_ligth"
+        android:layout_row="7"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="4" />
+
+    <TextView
+        android:tag="bt_1"
+        style="@style/calc_ligth"
+        android:layout_row="8"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="1" />
+
+    <TextView
+        android:tag="parent_left"
+        style="@style/calc_ligth"
+        android:layout_row="9"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="(" />
+
+
+    <!-- FILA 2-->
+
+
+    <TextView
+        android:tag="bt_c"
+        android:id="@+id/boton_c"
+        style="@style/calc_dark"
+        android:layout_row="5"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="2"
+        android:width="36dp"
+        android:height="50dp"
+        android:onClick="calculadora"
+        android:text="c" />
+
+    <TextView
+        android:tag="bt_8"
+        style="@style/calc_ligth"
+        android:layout_row="6"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="8" />
+
+    <TextView
+        android:tag="bt_5"
+        style="@style/calc_ligth"
+        android:layout_row="7"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="5" />
+
+    <TextView
+        android:tag="bt_2"
+        style="@style/calc_ligth"
+        android:layout_row="8"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="2" />
+
+    <TextView
+        android:tag="bt_0"
+        style="@style/calc_ligth"
+        android:layout_row="9"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="0" />
+
+
+    <!-- FILA 3 -->
+
+
+    <TextView
+        android:tag="bt_9"
+        style="@style/calc_ligth"
+        android:layout_row="6"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="9" />
+
+    <TextView
+        android:tag="bt_6"
+        style="@style/calc_ligth"
+        android:layout_row="7"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="6" />
+
+    <TextView
+        android:tag="bt_3"
+        style="@style/calc_ligth"
+        android:layout_row="8"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="3" />
+
+    <TextView
+        android:tag="parent_rigth"
+        style="@style/calc_ligth"
+        android:layout_row="9"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text=")" />
+
+
+    <!-- FILA 4-->
+
+
+    <TextView
+        android:tag="multiplicar"
+        style="@style/calc_dark"
+        android:layout_row="5"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:width="36dp"
+        android:height="50dp"
+        android:onClick="calculadora"
+        android:text="x" />
+
+    <TextView
+        android:tag="sumar"
+        style="@style/calc_dark"
+        android:layout_row="6"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="+" />
+
+    <TextView
+        android:tag="restar"
+        style="@style/calc_dark"
+        android:layout_row="7"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="-" />
+
+    <TextView
+        android:tag="punto"
+        style="@style/calc_dark"
+        android:layout_row="8"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="." />
+
+    <TextView
+        android:tag="igual"
+        style="@style/calc_igual"
+        android:layout_row="9"
+        android:layout_rowSpan="1"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:onClick="calculadora"
+        android:text="=" />
+
+
+</GridLayout>
